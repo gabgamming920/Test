@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabrix - Mod Releases</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="downloadMusic">
+        <source src="audio/DownloadComplete.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="backgroundMusic">
+        <source src="audio/Main Menu For Web.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Intro elements -->
+    <div id="introOverlay" class="intro-overlay">
+        <div class="click-message">Click to Start</div>
+    </div>
+    <div id="videoContainer" class="video-container" style="display: none;">
+        <video id="introVideo" width="100%" height="100%">
+            <source src="video/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="skipMessage" class="skip-message" style="display: none;">Press ESC to skip</div>
+    </div>
+
+    <div class="background-blur"></div>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="image/left-icon.png" alt="Game Logo" class="header-icon">
+                <img src="image/Web Title.png" alt="Title" class="header-title">
+                <img src="image/right-icon.png" alt="Game Logo" class="header-icon">
+            </div>
+            <p>Gabrix develops mods on Generals and Zero Hour.</p>
+        </header>
+        <main>
+            <section>
+                <h2>About The Developer</h2>
+                <button id="openModalBtn">Learn More</button>
+                <div id="aboutModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+                        <h2>About The Developer</h2>
+                        <p>Developer's intention on making mods is to past time, but he gets so focused that he made it a half-time or free time job to do</p>
+                        <p>If you're interested in joining with me, you don't need to be a software developer/engineer. We welcome contributions in sound design, graphics, voice acting, and more!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Support Me</h2>
+                <button id="openModalBtn2">Donate</button>
+                <div id="aboutModal2" class="modal">
+                     <div class="modal-content">
+                        <span class="close" onclick="closeModal('aboutModal2')">&times;</span>
+                        <h2>Please Support Me</h2>
+                        <p>If you are interested in donating, you can kindly donate to me.</p>
+                        <p>QR Codes to Donate:</p>
+						<p><strong>Maker of the Website</strong></p> 
+						<ul class="donation-options">
+						<li>
+                            <p>$5</p>
+                            <img src="image/meqrcode5usd.jpg" alt="$5 QR Code">
+                        </li>
+                        <li>
+                            <p>$10</p>
+                            <img src="image/meqrcode10usd.jpg" alt="$10 QR Code">
+                        </li>
+                        <li>
+                            <p>$20</p>
+                            <img src="image/meqrcode20usd..jpg" alt="$20 QR Code">
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <hr style="margin-top: 40px; border-color: #555;">
+
+            <section>
+                <h2>Popular Game Releases</h2>
+                <p>Browse through all popular releases of our projects.</p>
+
+                <div class="game-archive">
+                    <h3>Infantry Bleed Out</h3>
+
+                    <div class="release-version">
+                        <h4>Version 3.1b <span class="release-date">(July 20, 2025)</span></h4>
+                         <ul>
+                            <li>Fixed.</li>
+                            <li>Stable. Current Version.</li>
+                        </ul>
+                        <div class="download-section">
+                            <a href="https://github.com/gabgamming920/Releases-Mods/releases/download/version-new/InfantryMod.Final.Build.3.1b.zip" target="_blank" onclick="playdownloadAudio()" class="download-link">Download v3.1b</a>
+                            <div class="works-in">
+                                <span>Works in:</span>
+                                <img src="image/shockwave-icon.png" alt="Shockwave Icon" title="C&C Generals: Shockwave">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="game-archive">
+					<h3>Infantry Stay and Bleed</h3>
+					
+					<div class="release-version">
+						<h4>Version 3.1 <span class="release-date">(July 21, 2025)</span></h4>
+						<p>This Version is the same but stays.</p>
+						<ul>
+							<li>Nothing.</li>
+						</ul>
+						<div class="download-section">
+							<a href="https://github.com/gabgamming920/Releases-Mods/releases/download/version-new/InfantryMod.Final.Build.3.1.7z" target="_blank" onclick="playdownloadAudio()"  class="download-link">Download v3.1</a>
+						<div class="works-in">
+							<span>Works in:</span>
+							<img src="image/shockwave-icon.png" alt="Shockwave Icon" title="C&C Generals: Shockwave">
+						</div>
+					</div>
+				</div>
+			</div>
+				
+                <div class="game-archive">
+                    <h3>Realistic Mod (I guess??)</h3>
+
+                    <div class="release-version">
+                        <h4>Version 1.0 <span class="release-date">(September 28, 2025)</span></h4>
+                        <p>This is the first planned build for the Realistic Mod.</p>
+                        <ul>
+                            <li>Might contain bugs, but it will be fine.</li>
+                            <li>Initial Release.</li>
+                        </ul>
+                        <div class="download-section">
+                            <a href="https://github.com/gabgamming920/Releases-Mods/releases/download/version-new/Realism.Mod.Shockwave.-.Initial.Build.zip" target="_blank" onclick="playdownloadAudio()"  class="download-link">Download v1</a>
+                            <div class="works-in">
+                                <span>Works in:</span>
+                                <img src="image/shockwave-icon.png" alt="Shockwave Icon" title="C&C Generals: Shockwave">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEW SECTION WITH BUTTONS -->
+            <section style="margin-top: 40px; padding-bottom: 20px;">
+                <div class="page-nav-container">
+                    <a href="second-page.html" class="page-nav-btn">View More Projects</a>
+                    <a href="https://gabgamming920.github.io/Gabrix-Web-Mods-RA2/" class="page-nav-btn" target="_blank">RA2 Themed Website</a>
+					<a href="test.html" class="page-nav-btn">Login/Register</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Gabrix Sole Developer. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
